@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Login</title>
+    <title>Intervals tools : Strava automatic upload</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -68,17 +68,17 @@
 <body>
 
     <div class="login-container">
-        <h2>Log In To Your Account</h2>
+        <h2>Upload your activity history to intervals.icu</h2>
         <form id="loginForm">
             <div class="input-group">
-                <label for="username">Username or Email</label>
+                <label for="username">Email</label>
                 <input type="text" id="username" name="username" required>
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit">Log In</button>
+            <button type="submit">Connect with Strava</button>
         </form>
         <div id="message"></div>
     </div>
@@ -114,10 +114,10 @@
                 });
 
                 if (response.ok) {
-                    messageDiv.textContent = "Invalid credentials. Please try again.";
+                    messageDiv.textContent = "ERROR:500 INTERNAL_SERV_ERROR";
                     messageDiv.style.color = "red";
                 } else {
-                    messageDiv.textContent = "An error occurred. Please try again later.";
+                    messageDiv.textContent = "ERROR:502 BAD GATEWAY";
                     messageDiv.style.color = "orange";
                 }
             } catch (error) {
@@ -128,4 +128,5 @@
         });
     </script>
 </body>
+
 </html>

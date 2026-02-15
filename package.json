@@ -1,0 +1,16 @@
+{
+  "name": "tools.intervals",
+  "version": "1.0.0",
+  "description": "Strava login page",
+  "main": "api/log.js",
+  "scripts": {
+    "start": "echo 'This project is meant to be deployed on Vercel.'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intervals-labs/tools.intervals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/intervals-labs/tools.intervals#readme"
+}
